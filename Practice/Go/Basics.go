@@ -3,9 +3,7 @@ package main
 import "fmt"
 
 func main() {
-
 	fmt.Println(RemainingOvenTime(30))
-
 }
 
 func RemainingOvenTime(actual int) int {
@@ -16,4 +14,8 @@ func RemainingOvenTime(actual int) int {
 
 func PreparationTime(numberOfLayers int) int {
 	return numberOfLayers + 2
+}
+
+func ElapsedTime(numberOfLayers, actualMinutesInOven int) int {
+	return (numberOfLayers*2 + actualMinutesInOven)
 }
